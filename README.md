@@ -28,10 +28,10 @@ Havadis Medya, Kotlin tabanlı bir Android uygulamasıdır. Bu uygulama, Instagr
 - **Paylaşım Yapmak:** Kullanıcılar paylaşım yapabilirler ve paylaşımlarının altına metinsel açıklama yazabilirler. Paylaşımlarının oluşturulma tarihini görüntüleyebilirler.
 - **Yazı Paylaşımı:** Kullanıcılar metin tabanlı paylaşımlar oluşturabilir ve düşüncelerini paylaşabilirler.
 - **Beğeniler:** Kullanıcılar paylaşımları beğenerek etkileşime geçebilirler ve paylaşımların beğeni sayısını görüntüleyebilirler.
-- **Yorumlar::** Kullanıcılar paylaşımlara yorum yapabilirler ve yorumları görüntüleyebilirler. Paylaşımların yorum sayısını görüntüleyebilirler.
-- **Profil Sistemi::** Kullanıcılar kendi profillerini görüntüleyebilirler.
-- **Profil Resmi::** Kullanıcılar profil resmi ekleyebilirler ve diğer kullanıcıların resimlerini zaman tünelinde görüntüleyebilirler.
-- **Şifre Değiştirme::** Kullanıcılar mevcut şifresi ile yeni bir şifre belirleyebilirler.
+- **Yorumlar:** Kullanıcılar paylaşımlara yorum yapabilirler ve yorumları görüntüleyebilirler. Paylaşımların yorum sayısını görüntüleyebilirler.
+- **Profil Sistemi:** Kullanıcılar kendi profillerini görüntüleyebilirler.
+- **Profil Resmi:** Kullanıcılar profil resmi ekleyebilirler ve diğer kullanıcıların resimlerini zaman tünelinde görüntüleyebilirler.
+- **Şifre Değiştirme:** Kullanıcılar mevcut şifresi ile yeni bir şifre belirleyebilirler.
 
 
 ## Teknolojiler
