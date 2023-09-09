@@ -10,7 +10,8 @@ Havadis Medya, Kotlin tabanlı bir Android uygulamasıdır. Bu uygulama, Instagr
 - Önceki sürümde Java kullanılmıştı, ancak bu sürümde Kotlin kullanıldı.
 - Performans optimizasyonları yapıldı.
 - Tespit edilen açıklar düzeltildi.
-- Havadis Logosu ve diğer resimler baştan tasarlanarak vektörel hale getirildi.
+- Havadis Logosu ve diğer resimler Adobe XD ile baştan tasarlanarak vektörel hale getirildi.
+- Uygulama ikonu Android Studio ile baştan ayarlandı ve tüm cihazlar için uyumlu hale getirildi.
 - Daha ayrıntılı ve uyumlu bir layout yapısı kullanıldı.
 - Java versiyonuna göre daha temiz ve daha anlaşılır bir kod yapısı ile oluşturuldu.
 - Tüm sayfalar Activity yerine Fragment ile oluşturuldu.
