@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "479986984124",
+    "project_id": "havadismedya-fce44",
+    "storage_bucket": "havadismedya-fce44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479986984124:android:bddb4f8541be0e0969dcb9",
+        "android_client_info": {
+          "package_name": "com.erendogan.havadis_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479986984124-1cgekngj9jj7jjo91ucrhtqkiunsdd4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrjkMgM4lSk2TJIcbgmgejTcA-XNFTdUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479986984124-1cgekngj9jj7jjo91ucrhtqkiunsdd4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479986984124:android:52971d639500091969dcb9",
+        "android_client_info": {
+          "package_name": "com.example.havadismedya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479986984124-1cgekngj9jj7jjo91ucrhtqkiunsdd4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrjkMgM4lSk2TJIcbgmgejTcA-XNFTdUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479986984124-1cgekngj9jj7jjo91ucrhtqkiunsdd4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profilEkraniArkaplan"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/gradient"
+    tools:context=".fragment.ProfilEkrani">
+
+    <TextView android:id="@+id/textView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:fontFamily="monospace" android:text="Profil" android:textAlignment="center"
+        android:textColor="@color/black" android:textSize="32sp" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="260dp"
+                android:layout_height="260dp" android:layout_marginTop="15dp"
+                android:background="@drawable/oval_arkaplan" android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profilResim"
+                    android:layout_width="235dp" android:layout_height="235dp"
+                    android:src="@drawable/blank" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView android:id="@+id/profilMail" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:text="test@hotmail.com" android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/profilResimLayout"
+                android:layout_width="322dp" android:layout_height="70dp"
+                android:layout_marginTop="20dp" android:onClick="profilResim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profilMail">
+
+                <ImageView android:id="@+id/imageView8" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.491" app:srcCompat="@drawable/arrow"
+                    android:importantForAccessibility="no" />
+
+                <ImageView android:id="@+id/imageView9" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/btn_3"
+                    android:importantForAccessibility="no" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Profil Resmi Ekle" android:textColor="#000000"
+                    android:textSize="26sp" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/sifreDegistirLayout"
+                android:layout_width="322dp" android:layout_height="70dp"
+                android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <ImageView android:id="@+id/imageView10" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.491" app:srcCompat="@drawable/arrow"
+                    android:importantForAccessibility="no" />
+
+                <ImageView android:id="@+id/imageView11" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/btn_4"
+                    android:importantForAccessibility="no" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp" android:text="Şifre Değiştir"
+                    android:textColor="#000000" android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="322dp"
+                android:id="@+id/cikisYapLayout" android:layout_height="70dp"
+                android:layout_marginTop="10dp" android:onClick="cikis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <ImageView android:id="@+id/imageView6" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.491" app:srcCompat="@drawable/arrow"
+                    android:importantForAccessibility="no" />
+
+                <ImageView android:id="@+id/imageView7" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/btn_6"
+                    android:importantForAccessibility="no" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Çıkış Yap" android:textColor="#000000" android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

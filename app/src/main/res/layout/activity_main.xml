@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/linear"
+    android:background="@drawable/gradient" tools:context=".view.MainActivity">
+
+    <ImageView android:layout_width="wrap_content" android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" android:layout_gravity="center"
+        android:scaleType="fitXY" app:srcCompat="@drawable/havadis"
+        android:importantForAccessibility="no" />
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="280dp"
+        android:layout_height="70dp" android:layout_gravity="center" android:layout_marginTop="35dp"
+        android:hint="E-Postanızı Giriniz" android:inputType="text">
+
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/mailInputt"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:inputType="textEmailAddress" android:drawableStart="@drawable/mail"
+            android:drawablePadding="5dp" android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="280dp"
+        android:layout_height="70dp" android:layout_gravity="center" android:layout_marginTop="15dp"
+        android:hint="Parolanızı Giriniz" android:inputType="textPassword">
+
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/passwordInputt"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:inputType="textPassword" android:drawableStart="@drawable/password"
+            android:paddingStart="15dp" android:drawablePadding="8dp" android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button android:layout_width="245dp" android:layout_height="60dp"
+        android:layout_gravity="center" android:layout_marginTop="50dp"
+        android:background="@drawable/buton_arkaplan" android:fontFamily="@font/lato_bold"
+        android:onClick="girisYap" android:text="Giriş Yap" android:textColor="@color/white"
+        android:textSize="26sp">
+
+    </Button>
+
+    <Button android:layout_width="245dp" android:layout_height="60dp"
+        android:layout_gravity="center" android:layout_marginTop="50dp"
+        android:background="@drawable/buton_arkaplan" android:fontFamily="@font/lato_bold"
+        android:onClick="kayitOl" android:text="Kayıt Ol" android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <TextView android:layout_width="184dp" android:layout_height="50dp"
+        android:layout_gravity="center" android:layout_marginTop="20dp" android:clickable="true"
+        android:onClick="sifirla" android:text="Parolamı Unuttum" android:textAlignment="center"
+        android:textColor="#000000" android:textSize="22sp" android:textStyle="bold"
+        tools:layout_editor_absoluteX="143dp" tools:layout_editor_absoluteY="404dp"
+        android:focusable="true" />
+
+
+</LinearLayout>

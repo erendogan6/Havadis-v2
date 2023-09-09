@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/profilUpload"
+    android:background="@drawable/gradient" tools:context=".fragment.ProfilResim">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/constraintLayout4"
+        android:layout_width="55dp" android:layout_height="55dp" android:onClick="back"
+        android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+        android:background="@drawable/oval_arkaplan" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/back"
+            android:contentDescription="TODO" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/imageView"
+        android:layout_width="300dp" android:layout_height="300dp" android:layout_marginTop="104dp"
+        android:src="@drawable/upload" android:background="@drawable/oval_arkaplan"
+        android:onClick="yukle" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button android:id="@+id/yuklemeButonu" android:layout_width="153dp"
+        android:layout_height="55dp" android:layout_marginTop="88dp"
+        android:background="@drawable/buton_arkaplan" android:onClick="yuklemeButonu"
+        android:text="Yükle" android:textColor="@color/white" android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

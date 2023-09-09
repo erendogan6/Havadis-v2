@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profilUpload"
+    android:background="@drawable/gradient"
+    tools:context=".fragment.SifreDegistir">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/oval_arkaplan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/eskiSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="196dp"
+        android:background="#3BAA9B9B"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="Eski Şifrenizi Giriniz"
+        android:inputType="text|textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yeniSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="#3BAA9B9B"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="Yeni Şifrenizi Giriniz"
+        android:inputType="text|textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eskiSifre" />
+
+    <EditText
+        android:id="@+id/yeniSifre2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="#3BAA9B9B"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="Yeni Şifrenizi Tekrar Giriniz"
+        android:inputType="text|textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeniSifre" />
+
+    <Button
+        android:id="@+id/sifreDegistirButon"
+        android:layout_width="153dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/buton_arkaplan"
+        android:onClick="sifreDegistir"
+        android:text="Değiştir"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeniSifre2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yorumcuText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:background="#222831"
+        android:fontFamily="@font/poppins"
+        android:text="Yorumcu"
+        android:textColor="#00ADB5"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/yorumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="35dp"
+        android:paddingTop="5dp"
+        android:background="#393E46"
+        android:fontFamily="@font/roboto"
+        android:text="Yorum"
+        android:textColor="#EEEEEE"
+        android:textSize="22sp">
+    </TextView>
+
+</LinearLayout>

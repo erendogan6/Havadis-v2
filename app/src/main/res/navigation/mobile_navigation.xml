@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_zamanTuneli">
+
+    <fragment
+        android:id="@+id/navigation_zamanTuneli"
+        android:name="com.erendogan.havadis_v2.fragment.ZamanTuneli"
+        android:label="Zaman Tüneli"
+        tools:layout="@layout/fragment_zaman_tuneli" />
+
+    <fragment
+        android:id="@+id/navigation_paylasim"
+        android:name="com.erendogan.havadis_v2.fragment.YuklemeEkrani"
+        android:label="Paylaşım Ekranı"
+        tools:layout="@layout/fragment_yukleme_ekrani" >
+        <action
+            android:id="@+id/action_navigation_paylasim_to_navigation_zamanTuneli"
+            app:destination="@id/navigation_zamanTuneli"
+            app:popUpTo="@id/navigation_paylasim"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.erendogan.havadis_v2.fragment.ProfilEkrani"
+        android:label="Profil Ekranı"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_navigation_profil_to_profilResim2"
+            app:destination="@id/profilResim2"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/navigation_profil"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profil_to_sifreDegistir"
+            app:destination="@id/sifreDegistir"
+            app:popUpTo="@id/navigation_profil"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilResim2"
+        android:name="com.erendogan.havadis_v2.fragment.ProfilResim"
+        android:label="Profil Resim"
+        tools:layout="@layout/fragment_profil_resim" >
+        <action
+            android:id="@+id/action_profilResim2_to_navigation_profil"
+            app:destination="@id/navigation_profil"
+            app:popUpTo="@id/profilResim2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sifreDegistir"
+        android:name="com.erendogan.havadis_v2.fragment.SifreDegistir"
+        android:label="fragment_sifre_degistir"
+        tools:layout="@layout/fragment_sifre_degistir" >
+        <action
+            android:id="@+id/action_sifreDegistir_to_navigation_profil"
+            app:destination="@id/navigation_profil"
+            app:popUpTo="@id/sifreDegistir"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
